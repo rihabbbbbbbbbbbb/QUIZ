@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="progress-bar">
+            <div class="step" id="step-1">30%</div>
+            <div class="step" id="step-2">60%</div>
+            <div class="step" id="step-3">100%</div>
+        </div>
+        <form id="quiz-form">
+           <!-- Step 1 -->
+<div class="form-step" id="form-step-1">
+    <div class="header">
+        <h2>Quiz Time!</h2>
+        <p>Test your knowledge in HTML!</p>
+    </div>
+    <div class="form-group">
+        <label><b style="color:rgb(176, 62, 62);">QUESTION 1 : </b> <b>Which HTML element is used to define the main heading of a page?</b></label>
+        <ol type="A">
+            <li><input type="radio" name="q1" value="a">  &lt;head&gt;</li>
+            <li><input type="radio" name="q1" value="b">  &lt;title&gt;</li>
+            <li><input type="radio" name="q1" value="c">  &lt;h1&gt;</li>
+            <li><input type="radio" name="q1" value="d">  &lt;header&gt;</li>
+        </ol>
+    </div>
+    <div class="form-group">
+        <label><b style="color:rgb(176, 62, 62);">QUESTION 2 : </b><b>What is the correct HTML element for inserting a line break?</b></label>
+        <ol type="A">
+            <li><input type="radio" name="q2" value="a">  &lt;break&gt;</li>
+            <li><input type="radio" name="q2" value="b">  &lt;br&gt;</li>
+            <li><input type="radio" name="q2" value="c">  &lt;lb&gt;</li>
+            <li><input type="radio" name="q2" value="d">  &lt;line&gt;</li>
+        </ol>
+    </div>
+    <div class="form-group">
+        <label><b style="color:rgb(176, 62, 62);">QUESTION 3 : </b><b>Which attribute specifies an alternate text for an image, if the image cannot be displayed?</b></label>
+        <ol type="A">
+            <li><input type="radio" name="q3" value="a"> src</li>
+            <li><input type="radio" name="q3" value="b">  title</li>
+            <li><input type="radio" name="q3" value="c"> alt</li>
+            <li><input type="radio" name="q3" value="d"> longdesc</li>
+        </ol>
+    </div>
+    <button type="button" onclick="nextStep(2)">Next</button>
+</div>
+
+            <!-- Step 2 -->
+            <!-- Step 2 -->
+<div class="form-step" id="form-step-2">
+    <div class="header">
+        <h2>Quiz Time!</h2>
+        <p>Test your knowledge in CSS!</p>
+    </div>
+    <div class="form-group">
+        <label><b style="color:rgb(176, 62, 62);">QUESTION 4 : </b><b>Which CSS property is used to change the background color?</b></label>
+        <ol type="A">
+            <li><input type="radio" name="q4" value="a"> color</li>
+            <li><input type="radio" name="q4" value="b"> bgcolor</li>
+            <li><input type="radio" name="q4" value="c"> background-color</li>
+            <li><input type="radio" name="q4" value="d"> background</li>
+        </ol>
+    </div>
+    <div class="form-group">
+        <label><b style="color:rgb(176, 62, 62);">QUESTION 5 : </b><b>How do you make each word in a text start with a capital letter?</b></label>
+        <ol type="A">
+            <li><input type="radio" name="q6" value="a"> text-transform: uppercase;</li>
+            <li><input type="radio" name="q6" value="b"> text-transform: capitalize;</li>
+            <li><input type="radio" name="q6" value="c"> text-transform: lowercase;</li>
+            <li><input type="radio" name="q6" value="d"> text-transform: initial;</li>
+        </ol>
+    </div>
+    <div class="form-group">
+        <label><b style="color:rgb(176, 62, 62);">QUESTION 6 : </b><b>Which CSS property controls the text size?</b></label>
+        <ol>
+            <li><input type="radio" name="q7" value="a"> font-style</li>
+            <li><input type="radio" name="q7" value="b"> text-size</li>
+            <li><input type="radio" name="q7" value="c"> font-size</li>
+            <li><input type="radio" name="q7" value="d"> text-style</li>
+        </ol>
+    </div>
+    <button type="button" onclick="prevStep(1)">Back</button>
+    <button type="button" onclick="nextStep(3)">Next</button>
+</div>
+
+            <!-- Step 3 -->
+<div class="form-step" id="form-step-3">
+    <div class="header">
+        <h2>Quiz Time!</h2>
+        <p>Test your knowledge in JavaScript!</p>
+    </div>
+    <div class="form-group">
+        <label><b style="color:rgb(176, 62, 62);">QUESTION 8 : </b><b>Which company developed JavaScript?</b></label>
+        <ol type="A">
+            <li><input type="radio" name="q8" value="a"> A. Microsoft</li>
+            <li><input type="radio" name="q8" value="b"> B. Sun Microsystems</li>
+            <li><input type="radio" name="q8" value="c"> C. Netscape</li>
+            <li><input type="radio" name="q8" value="d"> D. IBM</li>
+        </ol>
+    </div>
+    <div class="form-group">
+        <label><b style="color:rgb(176, 62, 62);">QUESTION 9 : </b><b>How do you create a function in JavaScript?</b></label>
+        <ol type="A">
+            <li><input type="radio" name="q9" value="a"> function = myFunction()</li>
+            <li><input type="radio" name="q9" value="b"> function myFunction()</li>
+            <li><input type="radio" name="q9" value="c"> function:myFunction()</li>
+            <li><input type="radio" name="q9" value="d"> create function myFunction()</li>
+        </ol>
+    </div>
+    <div class="form-group">
+        <label><b style="color:rgb(176, 62, 62);">QUESTION 10 : </b><b>How can you add a comment in JavaScript?</b></label>
+        <ol type="A">
+            <li><input type="radio" name="q10" value="a"> &lt;!-- This is a comment --&gt;</li>
+            <li><input type="radio" name="q10" value="b"> // This is a comment</li>
+            <li><input type="radio" name="q10" value="c"> /* This is a comment */</li>
+            <li><input type="radio" name="q10" value="d"> Both B and C</li>
+        </ol>
+    </div>
+    <button type="button" onclick="prevStep(2)">Back</button>
+    <button type="button" onclick="submitQuiz()">Submit</button>
+</div>
+
+            <!-- Result Section -->
+            <div class="form-step" id="form-step-4">
+                <div class="header">
+                    <h2>Quiz Results</h2>
+                </div>
+                <div id="results"></div>
+                <div id="solutions"></div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

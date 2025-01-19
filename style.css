@@ -1,0 +1,141 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(108, 154, 202);
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 50px auto;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px;
+}
+
+.step {
+    flex: 1; /* Each step takes equal space */
+    height: 20px;
+    background: lightgray;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size: 12px;
+    position: relative;
+    margin-right: 5px;
+}
+
+
+
+.step:last-child {
+    margin-right: 0;
+}
+
+.step.active {
+    background: rgb(176, 62, 62);
+}
+
+.step span {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    text-align: center;
+}
+
+.header img {
+   
+    border-radius: 50%;
+}
+
+.header h2 {
+    margin: 2px 0;
+    color:  rgb(95, 193, 95);
+}
+
+.header p {
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+   
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Match font size */
+
+}
+
+button {
+    background:  rgb(95, 193, 95);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #008b9a;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+/* Add this CSS to style the select dropdown */
+.form-group select {
+    width: 92%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Match background color */
+    color: #333; /* Match text color */
+    font-size: 14px; /* Match font size */
+    -webkit-appearance: none; /* Remove default styles on Chrome/Safari */
+    -moz-appearance: none; /* Remove default styles on Firefox */
+    appearance: none; /* Remove default styles */
+    cursor: pointer;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #00acc1; /* Highlight border color on focus */
+    box-shadow: 0 0 5px rgba(0, 172, 193, 0.5); /* Add shadow on focus */
+}
+
+i { color :rgb(176, 62, 62);
+
+}
+label {
+    color :rgb(108, 154, 202);
+}
